@@ -28,8 +28,6 @@ public class MergeSort {
 		for(int num: theArray) {
 			System.out.println(num);
 		}
-
-
 	}
 
 
@@ -61,13 +59,9 @@ public class MergeSort {
 		}
 
 		int mid = (finish + start) /2; //Calculate the mid position
-		//System.out.println("start : " + start + " : finish : " + mid);
 		merge(myArray, start , mid );
-
-		//System.out.println("start: " + mid + " : finish : " + finish);
 		merge(myArray, mid, finish);
 
 		arraySplit(myArray, start, mid, finish);
-
 	}
 }
